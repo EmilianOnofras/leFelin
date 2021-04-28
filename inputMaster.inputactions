@@ -1,0 +1,74 @@
+{
+    "name": "inputMaster",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "feecc172-670b-42e6-8ea2-5b1e43d8fbbd",
+            "actions": [
+                {
+                    "name": "movement",
+                    "type": "Value",
+                    "id": "382c259d-e824-4bff-b8b7-41e4c053012c",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "jump",
+                    "type": "Button",
+                    "id": "0634e6ea-d946-4793-8a56-2c5dfdfff50d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "49e5d379-328d-430d-8168-c28461a89ccf",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Negative",
+                    "id": "64dbdad8-b9f5-479a-a256-e3b57e6e1679",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "d6f411bb-e434-4562-add3-018b40b9cf27",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ce4408d2-1e95-4d3f-a8a3-e59cd54ef49a",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
