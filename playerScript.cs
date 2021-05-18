@@ -56,6 +56,11 @@ public class playerScript : MonoBehaviour
                     gmMaster.lifeLost();
                 }
                 break;
+            case("fallDetection"):
+                gmMaster.fallLose();
+                break;
+            default:
+                break;
         }
     }
 
@@ -64,6 +69,7 @@ public class playerScript : MonoBehaviour
     }
 
     public void invulnerable(){
+        playerBody.gameObject.tag = "entity";
         playerBody.gameObject.layer = 10;
         enemyCollisionLogic=false;
         InvokeRepeating("blink", 1f, 0.4f);
@@ -71,6 +77,7 @@ public class playerScript : MonoBehaviour
     }
 
     void vulnerable(){
+        playerBody.gameObject.tag="Player";
         playerBody.gameObject.layer = 7;
         enemyCollisionLogic=true;
         CancelInvoke();

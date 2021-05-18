@@ -19,11 +19,13 @@ public class sessionData : MonoBehaviour
 
         if(numberOfLives == 0){
             SceneManager.LoadScene("gameOver");
+            numberOfLives = 3;
+        }else{
+            SceneManager.LoadScene("firstLevel");
         }
 
-        SceneManager.LoadScene("firstLevel");
+        
     }
-
 
     public int liveCount(){
         return numberOfLives;
